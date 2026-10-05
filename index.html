@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <p>ATTENDANCE CALCULATOR</p>
+    <div class="header">
+        <h1>How many classes<br>
+        <i>can I skip?</i></h1>
+        <p id="intro">Calculate your attendance before you decide</p>
+    </div>
+    <div>
+        <div>
+            <div class="data">
+                <label>Total scheduled sessions</label>
+                <input id="total" type="number" placeholder=40>
+            </div>
+            <div class="data">
+                <label>Sessions attended</label>
+                <input id="attended" type="number" placeholder="32">
+            </div> 
+            <div class="target">
+                <label>Target attendance 
+                    <span>75%</span>
+                </label>
+                <input id="target" type="range" min="1" max="100" value="75">
+            </div>
+            <button id="calculate">Calculate</button>
+        </div>
+
+        <div class="result">
+            <div class="current">
+                <div id="percentage">0<small>%</small></div>
+                <span>Current Attendance</span>
+            </div>
+
+            <div class="progress">
+                <div id="progressFill"></div>
+                <div id="targetMarker"></div>
+            </div>
+
+            <div id="targetLabel">Target: 75%</div>
+
+            <div class="answer">
+                <div>
+                    <span id="Dot"></span>
+                    <span>YOUR RESULT:</span>
+                </div>
+
+                <h2>Your result will appear here.</h2>
+                <p id="answer-final"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
